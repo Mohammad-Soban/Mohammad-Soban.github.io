@@ -3,8 +3,36 @@ layout: post
 title: You're up and running!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+## Setting Up a Multi-Container Application with Docker
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+### Introduction
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Docker has become an essential tool in modern software development, allowing developers to package applications and dependencies into lightweight, portable containers. In this tutorial, we’ll explore how to set up a multi-container application using Docker, which is particularly useful for projects with multiple components like frontend, backend, and databases.
+
+#### Prerequisites
+Before we begin, ensure you have the following prerequisites:
+
+<ul>
+  <li>Docker installed on your machine</li>
+  <li>Basic understanding of Docker concepts</li>
+  <li>Knowledge of your application’s frontend and backend technologies</li>
+</ul>
+
+### Part 1 : Docker Setup
+
+#### Step 1 :- Installing Docker
+
+To install Docker, follow these steps:
+
+1. Visit the Docker website and download the appropriate installer for your operating system.
+2. Run the installer and follow the on-screen instructions.
+3. Once installation is complete, verify that Docker is installed by running <i>docker --version</i> in your terminal.
+
+#### Step 2 :- Docker Basics
+
+Before diving into multi-container applications, it’s important to understand some basic Docker concepts:
+
+<ul>
+  <li>Containers: Lightweight, portable environments that encapsulate an application and its dependencies.</li>
+  <li>Images: Templates used to create containers. Images are created from Dockerfiles, which contain instructions for building the environment.</li>
+  <li>Dockerfile: A text file that contains all the commands needed to assemble a Docker image.</li></ul>
